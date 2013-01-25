@@ -41,3 +41,8 @@
 	c. git commit -m "first commit"
 	d. git remote add origin git@github.com:nitnayal/docs.git
 	e. git push -u origin master
+
+9. remove files
+	a. git rm classes/file.pyc
+	b. git commit -m"bla bla bla"
+	c. git push
