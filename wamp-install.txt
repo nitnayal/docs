@@ -1,0 +1,179 @@
+
+APACHE php.ini		=	F:\live\wamp\bin\apache\Apache2.2.11\bin\php.ini
+hosts				=	C:\WINDOWS\system32\drivers\etc\hosts
+httpd-vhosts.conf	=	F:\live\wamp\bin\apache\Apache2.2.11\conf\extra\httpd-vhosts.conf
+httpd.conf			=	F:\live\wamp\bin\apache\Apache2.2.11\conf\httpd.conf
+PEAR				=	F:\live\wamp\bin\php\php5.3.8\pear
+PHP php.ini			=	F:\live\wamp\bin\php\php5.3.8\php.ini
+
+
+==================================
+MYSQL
+
+F:\live\wamp\bin\mysql\mysql5.5.16\bin
+mysqladmin -u root -h localhost password pass
+
+F:\live\wamp\bin\mysql\mysql5.5.16\my.ini
+ENV: F:\live\wamp\bin\mysql\mysql5.5.16\bin
+
+host		= localhost
+user		= root
+password	= pass
+
+PHPMyadmin:
+F:\live\wamp\apps\phpmyadmin3.1.3.1\config.inc.php
+$cfg['Servers'][$i]['password'] = 'pass';
+
+=======================================
+Zend : square
+
+C:\WINDOWS\system32\drivers\etc\hosts
+127.0.0.1       square
+ENV: F:\live\wamp\www\square\public
+ENV: F:\live\wamp\bin\php\php5.3.8
+
+F:\live\wamp\bin\apache\Apache2.2.11\conf\httpd.conf
+Line:467 Include conf/extra/httpd-vhosts.conf
+
+F:\live\wamp\bin\apache\Apache2.2.11\conf\extra\httpd-vhosts.conf
+<VirtualHost *:80>
+	ServerName square
+	DocumentRoot F:\live\wamp\www\square\public
+		<Directory "F:\live\wamp\www\square\public">
+			AllowOverride All
+		</Directory>
+</VirtualHost>
+
+wamp -> apache -> apache modules -> rewrite modules
+
+=======================================
+
+PEAR:
+
+http://phphints.wordpress.com/2008/08/26/installing-pear-package-manager-on-wamp/
+
+php -d phar.require_hash=0 PEAR/go-pear.phar
+local -> yes ->enter
+
+Add: 
+
+;***** Added by go-pear
+include_path=".;F:\live\wamp\bin\php\php5.3.8\pear"
+;*****
+
+to php.ini file of apache from php's php.ini
+
+restart wamp , and type pear to see help commands
+
+run: 
+pear upgrade
+=======================================
+vhosts
+
+####tapic
+<VirtualHost *:80>
+    ServerName tapic.lan
+    DocumentRoot F:\live\wamp\www\tapic
+	<Directory "F:\live\wamp\www\tapic">
+			AllowOverride All
+		</Directory>
+</VirtualHost>
+#tapic
+127.0.0.1	tapic.lan
+127.0.0.1	tapicpublic.lan
+127.0.0.1	icreonproperty.lan
+127.0.0.1	tapic2.lan
+=======================================
+Doctrine: 
+for php 5.2
+
+pear install pear.doctrine-project.org/Doctrine-1.2.4.tgz
+
+********
+test.php
+<?php
+// include main Doctrine class file
+include_once 'Doctrine.php';
+spl_autoload_register(array('Doctrine', 'autoload'));
+
+// create Doctrine manager
+$manager = Doctrine_Manager::getInstance();
+
+// create database connection
+$conn = Doctrine_Manager::connection(
+'mysql://square:pass@localhost/square', 'doctrine');
+
+// auto-generate models
+Doctrine::generateModelsFromDb('F:\live\wamp\www\exp\php\doctrine\square',
+	array('doctrine'),
+	array('classPrefix' => 'Square_Model_', 'classPrefixFiles' => false)
+);
+?>
+=======================================
+
+Xdebug:
+http://www.xdebug.org/find-binary.php
+
+    Download php_xdebug-2.1.1-5.2-vc6.dll
+	
+    Move the downloaded file to F:\live\wamp\bin\php\php5.3.8\ext, and Edit 
+	
+	F:\live\wamp\bin\apache\Apache2.2.11\bin\php.ini, and 
+	F:\live\wamp\bin\php\php5.3.8\php.ini
+	
+	add the line:-
+    zend_extension_ts = F:\live\wamp\bin\php\php5.3.8\ext\php_xdebug-2.1.1-5.2-vc6.dll
+
+
+=======================================
+
+
+
+phpUNIT
+
+http://www.phpunit.de/manual/current/en/installation.html
+
+internet connection
+
+TO be done only once:
+pear channel-discover pear.phpunit.de
+pear channel-discover components.ez.no
+pear channel-discover pear.symfony-project.com
+
+pear install phpunit/PHPUnit
+
+this gives PHPUNIT in pear folder and phpUnit.bat in php folder
+
+3.3.6
+
+manuallly: copy foler to php folder. Edit pear-phpnit.bat to phpunit.bat and move to php directory. edit and add following lines
+set PHPBIN="F:\live\wamp\bin\php\php5.3.8"
+"F:\live\wamp\bin\php\php5.3.8\php.exe" "F:\live\wamp\bin\php\php5.3.8\PHPUnit-3.0.0\PHPUnit\TextUI\Command.php" %*
+http://pear.phpunit.de/
+
+=======================================
+
+Apache ANT: 
+
+requires JDK and JRE
+
+http://www.topsourcecode.com/index.php/server-installations/78-installing-apache-ant-in-windows-step-by-step-tutorial.html
+extract ant
+
+Environment Variable 1 (User):
+JAVA_HOME - C:\Program Files\Java\jdk1.6.0_26\bin
+
+Environment Variable 2 (User):
+ANT_HOME - C:\util\ant
+
+Environment Variable 3 (system):
+Path edit - C:\util\ant\bin
+
+change directory to ant-home
+ant -f fetch.xml -Ddest=system
+
+
+=======================================
+
+php 4 server_var:
+register_globals = ON

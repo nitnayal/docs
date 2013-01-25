@@ -1,0 +1,16 @@
+>>>>>>>>>>  zend:  >>>>>>>>>>
+Zend_Loader_Autoloader - loading library files
+
+>>>>>>>>>>  mysql:  >>>>>>>>>>
+---distinct column name in db
+select distinct table_name 
+from INFORMATION_SCHEMA.COLUMNS 
+where column_name like '%usertype%'
+and table_schema = ''		// database name if wanted
+
+>>>>>>>>>>  js >>>>>>>>>>
+---post error on console log
+error:function (xhr, ajaxOptions, thrownError){
+	alert(xhr.status);
+	alert(thrownError);
+} 

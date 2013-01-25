@@ -1,0 +1,16 @@
+netstat -tunpl - for active hosts
+
+================================================================================
+PHP
+sudo /etc/init.d/apache2 restart
+
+CURL - sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
+
+================================================================================			
+mongo db
+	sudo rm /data/db/mongod.lock
+	sudo /var/www/mongodb-linux-x86_64-2.2.2/bin/mongod
+	
+mongorestore
+	cd /var/www/mongodb-linux-x86_64-2.2.2/bin
+	./mongorestore --db emailing /home/silverline/Documents/nitin/mailin/db_dump/shouvik_emailing_dump_22-1/emailing_mLv5UDEQ

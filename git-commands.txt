@@ -1,0 +1,36 @@
+1. show current branch
+	 - git show-branch
+
+2. default master branch
+	 - git checkout master 
+	 
+3. Adding new files
+	a. git add . - add all your files to the current stage
+	b. git status - showing files that will be commited
+	c. git commit -m "message goes here"
+	d. [git remote add origin git@github.com:nitnayal/localhost.git] - If rit not connected
+	e. git push origin master
+		here remote repository is called origin and default branch is master
+
+4. test:	cd ~/.ssh
+			ssh -T git@github.com
+
+5. cloning: folder to be copied
+		git clone git@github.com:nitnayal/localhost.git
+		git clone -b dev git@github.com:DTSL/mailin_zend.git
+		
+6. PULL
+	A)
+		a. git status
+		b. git pull	(for branch)
+	B)
+		a. git remote add loc_alias git://github.com/nitnayal/localhost.git
+		b. git fetch loc_alias
+		c. git merge loc_alias/new_folder
+		d. git push origin master
+
+7. Commit modified file 
+	a. git status
+	b. git commit -m "message goes here" file_1 file_2 file_3
+	c. git pull
+	d. git push

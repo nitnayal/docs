@@ -1,0 +1,17 @@
+1.func_get_args - Returns an array comprising a function's argument list
+
+2.	a. preg_replace - Searches subject for matches to pattern and replaces them with replacement. 
+			preg_replace ($pattern ,$replacement ,$subject , $limit = -1, &$count)
+	b. preg_split - Split string by a regular expression
+			array preg_split($pattern,$subject,$limit = -1,$flags = 0)
+	
+3.	a. ob_start — Turn on output buffering
+	b. ob_get_clean — Get current buffer contents and delete current output buffer
+	
+4. filemtime — Gets file modification time
+
+5. file_get_contents — Reads entire file into a string
+
+6. $callers=debug_backtrace(); echo $callers[1]['function'] - for getting calling function
+
+7. get_called_class - Gets the name of the class the static method is called in. 

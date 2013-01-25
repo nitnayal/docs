@@ -1,0 +1,86 @@
+######## Zend ########
+autoloader - http://framework.zend.com/manual/en/zend.loader.autoloader.html
+getRequestUri - request part of string
+Zend_Filter_Input - filets n validators to apply with setData, by default keys of these are name given to ppts.
+Zend_Registry - register components for others to use
+Zend_Auth_Acl for multiple access
+
+####methods
+## get
+getInvokeArg - config file values
+getScriptPath,  getControllerName, viewSuffix, 
+getApplication , getAutoloader, pushAutoloader, spl_autoload
+
+## common
+convertNumerals() - to convert numbers between Arabic and Latin scripts. Requires PHP’s PCRE extension with UTF-8
+
+
+
+####decorators
+tags: openOnly - closeOnly - prepend 
+label: for labels
+setElementDecorators
+
+####doctrine
+fromArray - data to fromArray
+save() returns current record
+fromArray — If you have an array of values you want to use to fill a record or even a collection
+
+####files
+setValueDisabled -for multifiles
+getTransferAdapter() -	 returns Zend_File_Transfer HTTP's receive method to receive() indiv. parts of file
+
+
+####doctrine
+factory() method to instantiate a Log instance, as well as to configure attached writers and their filters
+setEventItem - for logs
+
+
+*************************************************************************************** 
+####### php #######
+spl_autoload_register - auto loads classes
+var_dump - function displays structured information about one or more expressions
+glob() - retrieve a list of all files corresponding in that directory
+PHP_EOL - end of line
+get_class() - name of class. param for class
+getenv - gets value of environment variable
+toArray - returns an array containing one entry per Row
+get_class($book)	get_parent_class($book)
+_autoload() to autoload classes
+iconv — Convert string to requested character encoding
+
+***************************************************************************************
+## css
+style="opacity:0.4;filter:alpha(opacity=40)" />
+
+***************************************************************************************
+## other
+facebook graph meta
+omnitureglobaljs pulsegraph
+php country from ip
+boxshadow
+
+***************************************************************************************
+## other tech
+
+gname nabble
+
+****************************************************************************************
+http://www.imdb.com/title/tt0456912/board/nest/57654098
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
+
+http://www.zfforums.com/register.php
+gushal1987
+
+Beyond the Gates 
+Shattered Glass
+Before Sunset 
+Defiance
+Heat
+Good Will Hunting
+He's Just Not That Into You
+Ghosts of Girlfriends Past
+A Time to Kill
+Nobody Knows
+The Conversation

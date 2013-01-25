@@ -1,0 +1,27 @@
+initiate Zend:
+
+C:\util\wamp\www\storefront\public\.htaccess:
+SetEnv APPLICATION_ENV development
+
+php_value "short_open_tag" "on"
+
+=======================================
+
+Request Object:
+getRequest() to get instance.
+getParam() to get parameters
+
+
+
+View:
+getScriptPath() - path till scripts foler
+viewSuffix	-	suffix of file
+
+=======================================
+
+doctrine:
+Doctrine::generateModelsFromDb('C:\Documents and Settings\nitin.nayal\Desktop\daily\8-11\tmp\models',array('doctrine'),array('classPrefix' => 'Square_Model_', 'classPrefixFiles' => false));
+
+
+-----------------------------
+lucene -> create open
