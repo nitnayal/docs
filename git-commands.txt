@@ -34,3 +34,10 @@
 	b. git commit -m "message goes here" file_1 file_2 file_3
 	c. git pull
 	d. git push
+
+8. adding new dir to new repo
+	a. git init
+	b. git add .		// for all files
+	c. git commit -m "first commit"
+	d. git remote add origin git@github.com:nitnayal/docs.git
+	e. git push -u origin master
