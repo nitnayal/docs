@@ -14,3 +14,7 @@ error:function (xhr, ajaxOptions, thrownError){
 	alert(xhr.status);
 	alert(thrownError);
 } 
+
+
+>>>>>>>>>> virtual host >>>>
+sudo geany /etc/apache2/sites-available/default
