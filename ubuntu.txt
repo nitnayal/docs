@@ -6,11 +6,20 @@ sudo /etc/init.d/apache2 restart
 
 CURL - sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
 
-================================================================================			
+================================================================================
+
+git clone git@github.com:DTSL/mailin_zend.git
+
+================================================================================
 mongo db
 	sudo rm /data/db/mongod.lock
-	sudo /var/www/mongodb-linux-x86_64-2.2.2/bin/mongod
+	sudo /var/www/mongodb/bin/mongod
 	
 mongorestore
-	cd /var/www/mongodb-linux-x86_64-2.2.2/bin
-	./mongorestore --db emailing /home/silverline/Documents/nitin/mailin/db_dump/shouvik_emailing_dump_22-1/emailing_mLv5UDEQ
+	cd /var/www/mongodb/bin
+	./mongorestore --db emailing /home/silverline/Documents/Nitin/mailin/db_dump/shouvik_emailing_dump_22-1/emailing_mLv5UDEQ
+	./mongorestore --db emailing --collection graph_stats /home/silverline/Documents/Nitin/mailin/db_dump/shouvik_emailing_dump_22-1/emailing_mLv5UDEQ/graph_stats.bson
+
+mongodump
+	cd /var/www/mongodb/bin/
+	./mongodump -d emailing -o /home/silverline/Documents/Nitin/emailing

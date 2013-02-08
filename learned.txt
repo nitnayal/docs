@@ -18,3 +18,9 @@ error:function (xhr, ajaxOptions, thrownError){
 
 >>>>>>>>>> virtual host >>>>
 sudo geany /etc/apache2/sites-available/default
+
+
+var a = "Côtes d'Armor france";
+var enc = encodeURIComponent(a);
+var enc_2 = enc.replace(/%20/g,"+");
+enc_2.replace(/'/g,"%27");
