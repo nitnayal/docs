@@ -46,3 +46,13 @@
 	a. git rm classes/file.pyc
 	b. git commit -m"bla bla bla"
 	c. git push
+
+
+10. merge fail conflict
+	a. git merge --abort
+	b. git reset --merge
+	c. go to your branch make changes same and then commit changes. 
+	d. pull and merge
+	
+11. discard unstaged changes
+	 a. git checkout -- .
