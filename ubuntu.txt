@@ -1,4 +1,5 @@
-netstat -tunpl - for active hosts
+netstat -tunpl -> for active hosts
+ifconfig -> for ips
 
 ================================================================================
 PHP
