@@ -1,6 +1,10 @@
 netstat -tunpl -> for active hosts
 ifconfig -> for ips
+
 sudo chmod 644 *	-> forremoving execute
+sudo chown -R silverline:silverline /var/www/node/*
+
+sudo apt-cache search npm		-> search package
 
 ================================================================================
 PHP
