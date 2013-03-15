@@ -14,28 +14,6 @@ getApplication , getAutoloader, pushAutoloader, spl_autoload
 ## common
 convertNumerals() - to convert numbers between Arabic and Latin scripts. Requires PHP’s PCRE extension with UTF-8
 
-
-
-####decorators
-tags: openOnly - closeOnly - prepend 
-label: for labels
-setElementDecorators
-
-####doctrine
-fromArray - data to fromArray
-save() returns current record
-fromArray — If you have an array of values you want to use to fill a record or even a collection
-
-####files
-setValueDisabled -for multifiles
-getTransferAdapter() -	 returns Zend_File_Transfer HTTP's receive method to receive() indiv. parts of file
-
-
-####doctrine
-factory() method to instantiate a Log instance, as well as to configure attached writers and their filters
-setEventItem - for logs
-
-
 *************************************************************************************** 
 ####### php #######
 spl_autoload_register - auto loads classes

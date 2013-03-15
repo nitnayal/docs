@@ -15,17 +15,25 @@ PHP
 Install
 	CURL - sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
 ================================================================================
+GIT path:
 
-git clone git@github.com:DTSL/mailin_zend.git
+	cd c:/wamp/www/mailin_zend_rc1
 
 ================================================================================
-mongo db
+Mongo:
+
+start
+cd C:\wamp\www\apps\mongodb-win32-x86_64-2.2.3\bin
+	mongod.exe --dbpath "C:\wamp\www\apps\mongodb-win32-x86_64-2.2.3\data"
+
+	mongo db
 	sudo rm /data/db/mongod.lock
 	sudo /var/www/mongodb/bin/mongod
 	
 mongorestore
-	cd /var/www/mongodb/bin
-	./mongorestore --db emailing /home/silverline/Documents/Nitin/mailin/db_dump/shouvik_emailing_dump_22-1/emailing_mLv5UDEQ
+	cd C:\wamp\www\apps\mongodb-win32-x86_64-2.2.3\bin\
+	mongorestore.exe --db emailing D:\Nitin\mailin\db_dump\shouvik_emailing_dump_22-1\emailing_mLv5UDEQ
+	
 	./mongorestore --db emailing --collection graph_stats /home/silverline/Documents/Nitin/mailin/db_dump/shouvik_emailing_dump_22-1/emailing_mLv5UDEQ/graph_stats.bson
 
 mongodump

@@ -18,6 +18,7 @@
 5. cloning: folder to be copied
 		git clone git@github.com:nitnayal/localhost.git
 >>>>>>		git clone git@github.com:DTSL/mailin_zend.git
+>>>>>>		git clone -b dev-rc1 git@github.com:DTSL/mailin_zend.git
 		
 6. PULL
 	A)
