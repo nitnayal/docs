@@ -56,4 +56,8 @@
 	d. pull and merge
 	
 11. discard unstaged changes
-	 a. git checkout -- .
+	 a. git checkout -- .		-> for all
+	 b. git checkout <filename>
+	 
+12. delete branch
+	git branch -D nit_staging

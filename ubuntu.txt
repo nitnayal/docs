@@ -25,6 +25,9 @@ Mongo:
 start
 cd C:\wamp\www\apps\mongodb-win32-x86_64-2.2.3\bin
 	mongod.exe --dbpath "C:\wamp\www\apps\mongodb-win32-x86_64-2.2.3\data"
+	
+cd C:\wamp\www\apps\mongodb-win32-x86_64-2.0.3\bin
+	mongod.exe --dbpath "C:\wamp\www\apps\mongodb-win32-x86_64-2.0.3\data"
 
 	mongo db
 	sudo rm /data/db/mongod.lock
