@@ -61,3 +61,6 @@
 	 
 12. delete branch
 	git branch -D nit_staging
+
+13. rename
+	git mv application/controllers/AnytestController.php application/controllers/StestController.php
