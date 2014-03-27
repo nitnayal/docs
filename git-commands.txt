@@ -1,8 +1,6 @@
-1. show current branch
-	 - git show-branch
-
-2. default master branch
-	 - git checkout master 
+1.	a. show all branches	 	- git branch
+	b. show current branch 		- git show-branch
+	c. switch to branch 		- git checkout <branch-name> 
 	 
 3. Adding new files
 	a. git add . - add all your files to the current stage
@@ -64,3 +62,15 @@
 
 13. rename
 	git mv application/controllers/AnytestController.php application/controllers/StestController.php
+
+
+
+
+------  remote changes 
+ 1. delete remote branch
+	git branch -D <branchName> 		// delete local branch
+ 	git push origin --delete <branchName>		// delete remote branch
+
+ 2. create remote branch
+ 	git checkout -b your_branch 	 	// create local branch
+ 	git push -u <remote-name> <branch-name>		// push to remote 
