@@ -19,14 +19,8 @@
 >>>>>>		git clone -b dev-rc1 git@github.com:DTSL/mailin_zend.git
 		
 6. PULL
-	A)
-		a. git status
-		b. git pull	(for branch)
-	B)
-		a. git remote add loc_alias git://github.com/nitnayal/localhost.git
-		b. git fetch loc_alias
-		c. git merge loc_alias/new_folder
-		d. git push origin master
+	a. git status
+	b. git pull	(for branch)
 
 7. Commit modified file 
 	a. git status
@@ -63,7 +57,8 @@
 13. rename
 	git mv application/controllers/AnytestController.php application/controllers/StestController.php
 
-
+14. merge
+	inside new branch git merge origin/master
 
 
 ------  remote changes 
