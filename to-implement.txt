@@ -1,10 +1,3 @@
-######## Zend ########
-autoloader - http://framework.zend.com/manual/en/zend.loader.autoloader.html
-getRequestUri - request part of string
-Zend_Filter_Input - filets n validators to apply with setData, by default keys of these are name given to ppts.
-Zend_Registry - register components for others to use
-Zend_Auth_Acl for multiple access
-
 ####methods
 ## get
 getInvokeArg - config file values
@@ -33,15 +26,9 @@ style="opacity:0.4;filter:alpha(opacity=40)" />
 
 ***************************************************************************************
 ## other
-facebook graph meta
-omnitureglobaljs pulsegraph
-php country from ip
-boxshadow
 
 ***************************************************************************************
 ## other tech
-
-gname nabble
 
 ****************************************************************************************
 http://www.imdb.com/title/tt0456912/board/nest/57654098
@@ -50,15 +37,3 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
 
 http://www.zfforums.com/register.php
 gushal1987
-
-Beyond the Gates 
-Shattered Glass
-Before Sunset 
-Defiance
-Heat
-Good Will Hunting
-He's Just Not That Into You
-Ghosts of Girlfriends Past
-A Time to Kill
-Nobody Knows
-The Conversation

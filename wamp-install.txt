@@ -1,20 +1,20 @@
 
-APACHE php.ini		=	F:\live\wamp\bin\apache\Apache2.2.11\bin\php.ini
+APACHE php.ini		=	C:\wamp\bin\apache\apache2.2.22\bin\php.ini
 hosts				=	C:\WINDOWS\system32\drivers\etc\hosts
-httpd-vhosts.conf	=	F:\live\wamp\bin\apache\Apache2.2.11\conf\extra\httpd-vhosts.conf
-httpd.conf			=	F:\live\wamp\bin\apache\Apache2.2.11\conf\httpd.conf
-PEAR				=	F:\live\wamp\bin\php\php5.3.8\pear
-PHP php.ini			=	F:\live\wamp\bin\php\php5.3.8\php.ini
+httpd-vhosts.conf	=	C:\wamp\bin\apache\apache2.2.22\conf\extra\httpd-vhosts.conf
+httpd.conf			=	C:\wamp\bin\apache\apache2.2.22\conf\httpd.conf
+PEAR				=	C:\wamp\bin\php\php5.3.13\pear
+PHP php.ini			=	C:\wamp\bin\php\php5.3.13\php.ini
 
 
 ==================================
 MYSQL
 
-F:\live\wamp\bin\mysql\mysql5.5.16\bin
+C:\wamp\bin\mysql\mysql5.5.24\bin
 mysqladmin -u root -h localhost password pass
 
-F:\live\wamp\bin\mysql\mysql5.5.16\my.ini
-ENV: F:\live\wamp\bin\mysql\mysql5.5.16\bin
+C:\wamp\bin\mysql\mysql5.5.24\my.ini
+ENV: C:\wamp\bin\mysql\mysql5.5.24\bin
 
 host		= localhost
 user		= root
@@ -32,10 +32,10 @@ C:\WINDOWS\system32\drivers\etc\hosts
 ENV: F:\live\wamp\www\square\public
 ENV: F:\live\wamp\bin\php\php5.3.8
 
-F:\live\wamp\bin\apache\Apache2.2.11\conf\httpd.conf
+C:\wamp\bin\apache\apache2.2.22\conf\httpd.conf
 Line:467 Include conf/extra/httpd-vhosts.conf
 
-F:\live\wamp\bin\apache\Apache2.2.11\conf\extra\httpd-vhosts.conf
+C:\wamp\bin\apache\apache2.2.22\conf\extra\httpd-vhosts.conf
 <VirtualHost *:80>
 	ServerName square
 	DocumentRoot F:\live\wamp\www\square\public
@@ -58,7 +58,7 @@ local -> yes ->enter
 Add: 
 
 ;***** Added by go-pear
-include_path=".;F:\live\wamp\bin\php\php5.3.8\pear"
+include_path=".;C:\wamp\bin\php\php5.3.13\pear"
 ;*****
 
 to php.ini file of apache from php's php.ini
@@ -116,13 +116,13 @@ http://www.xdebug.org/find-binary.php
 
     Download php_xdebug-2.1.1-5.2-vc6.dll
 	
-    Move the downloaded file to F:\live\wamp\bin\php\php5.3.8\ext, and Edit 
+    Move the downloaded file to C:\wamp\bin\php\php5.3.13\ext, and Edit 
 	
-	F:\live\wamp\bin\apache\Apache2.2.11\bin\php.ini, and 
-	F:\live\wamp\bin\php\php5.3.8\php.ini
+	C:\wamp\bin\apache\apache2.2.22\bin\php.ini, and 
+	C:\wamp\bin\php\php5.3.13\php.ini
 	
 	add the line:-
-    zend_extension_ts = F:\live\wamp\bin\php\php5.3.8\ext\php_xdebug-2.1.1-5.2-vc6.dll
+    zend_extension_ts = C:\wamp\bin\php\php5.3.13\ext\php_xdebug-2.1.1-5.2-vc6.dll
 
 
 =======================================
@@ -148,7 +148,7 @@ this gives PHPUNIT in pear folder and phpUnit.bat in php folder
 
 manuallly: copy foler to php folder. Edit pear-phpnit.bat to phpunit.bat and move to php directory. edit and add following lines
 set PHPBIN="F:\live\wamp\bin\php\php5.3.8"
-"F:\live\wamp\bin\php\php5.3.8\php.exe" "F:\live\wamp\bin\php\php5.3.8\PHPUnit-3.0.0\PHPUnit\TextUI\Command.php" %*
+"C:\wamp\bin\php\php5.3.13\php.exe" "C:\wamp\bin\php\php5.3.13\PHPUnit-3.0.0\PHPUnit\TextUI\Command.php" %*
 http://pear.phpunit.de/
 
 =======================================
